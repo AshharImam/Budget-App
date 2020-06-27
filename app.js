@@ -40,9 +40,6 @@ var budgetController = (function(){
             }
             data.allItem[type].push(newItem);
             return newItem;
-        },
-        testing : function(){
-            console.log(data);
         }
     }
 
@@ -65,6 +62,13 @@ var UIController = (function(){
                 desciption : document.querySelector(DOMstrings.inputDecription).value,
                 value : document.querySelector(DOMstrings.inputValue).value,
             }
+        },
+        addListItem : function(obj, type){
+            // create html with placeholder text
+            '<div class="item clearfix" id="income-0"><div class="item__description">Salary</div><divclass="right clearfix"><div class="item__value">+ 2,100.00</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div></div></div>'
+            // replacr placeholder text
+
+            // insert html into DOM
         },
         getDOMstrings : function(){
             return DOMstrings;

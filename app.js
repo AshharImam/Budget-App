@@ -203,11 +203,8 @@ var controller = (function(budgetCtrl, UICtrl){
             console.log(itemID)
             console.log(event.target);
             // 1. Delete item from the data structure
-<<<<<<< HEAD
             budgetCtrl.deleteItem(type, ID);
-=======
             
->>>>>>> 30b9c9da96f6c9b7094488dab40d7ba271d888b2
             // 2. Delete the item from the UI
 
             // 3. Update and show the new budget

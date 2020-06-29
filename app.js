@@ -166,7 +166,7 @@ var controller = (function(budgetCtrl, UICtrl){
         });
         document.querySelector(DOM.container).addEventListener('click', ctrlDeleteItem);
     };
-
+6
     var updateBudget = function() {
         // 1. Calculate the budget
         budgetCtrl.calculateBudget();
@@ -195,6 +195,7 @@ var controller = (function(budgetCtrl, UICtrl){
     var ctrlDeleteItem = function(event) {
         var itemID, splitID, type, ID;
         itemID = event.target.parentNode.parentNode.parentNode.parentNode.id;
+        // console.log(event.target);
         if (itemID) {
             splitID = itemID.split('-');
             type = splitID[0];
@@ -202,7 +203,11 @@ var controller = (function(budgetCtrl, UICtrl){
             console.log(itemID)
             console.log(event.target);
             // 1. Delete item from the data structure
+<<<<<<< HEAD
             budgetCtrl.deleteItem(type, ID);
+=======
+            
+>>>>>>> 30b9c9da96f6c9b7094488dab40d7ba271d888b2
             // 2. Delete the item from the UI
 
             // 3. Update and show the new budget
